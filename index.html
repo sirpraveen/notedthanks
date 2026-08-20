@@ -12993,11 +12993,12 @@ function renderSettings(){
         <summary style="cursor:pointer;font-size:12px;color:var(--c-ink2)">Setup steps (one-off)</summary>
         <ol style="font-size:12px;margin:8px 0 0 18px;color:var(--c-ink2);line-height:1.7">
           <li>Host this file at a web address, for example a free GitHub Pages site. Opening it as a local file will not work with Google sign-in.</li>
-          <li>At console.cloud.google.com, create a project and enable the Google Drive API.</li>
-          <li>Under Credentials, create an OAuth Client ID of type Web application, and add the hosted address to Authorised JavaScript origins.</li>
-          <li>On the OAuth consent screen, add your own Google account as a test user.</li>
+          <li>At console.cloud.google.com, create a project, then enable the Google Drive API under APIs &amp; Services &gt; Library.</li>
+          <li>Go to Google Auth Platform &gt; Branding and fill in an app name, then under Audience choose External and add your own Google account as a test user.</li>
+          <li>Go to Google Auth Platform &gt; Clients &gt; Create Client, choose Web application, and add the hosted address to Authorised JavaScript origins.</li>
           <li>Paste the Client ID below on each device, then press Connect.</li>
         </ol>
+        <div class="muted" style="font-size:11px;margin-top:6px">Google reorganised this section in 2024 into "Google Auth Platform" with Branding, Audience, and Clients tabs. If a guide mentions an "OAuth consent screen" menu item, that's the old name for the same settings.</div>
       </details>
       <div class="kvrow">
         <div><strong>Client ID</strong><div class="muted" style="font-size:12px">From your Google Cloud OAuth credentials. The same value goes on every device.</div></div>
